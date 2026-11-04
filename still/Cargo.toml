@@ -1,0 +1,14 @@
+[package]
+name = "crownos-camera-still"
+description = "Photos from camera frames"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+crownos-camera-frame = { workspace = true }
+thiserror = { workspace = true }
+turbojpeg = { workspace = true }
+
+[lints]
+workspace = true

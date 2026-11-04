@@ -1,0 +1,16 @@
+[package]
+name = "crownos-camera-record"
+description = "Hardware-accelerated video recording of camera frames with an Opus soundtrack"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+crownos-camera-frame = { workspace = true }
+crownos-config = { workspace = true }
+ffmpeg-next = { workspace = true, features = ["codec", "filter", "format"] }
+rustix = { workspace = true, features = ["fs"] }
+thiserror = { workspace = true }
+
+[lints]
+workspace = true

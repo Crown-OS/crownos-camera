@@ -1,0 +1,9 @@
+[package]
+name = "crownos-camera-frame"
+description = "Camera frames: packed pixels in memory or dma-bufs, on the PipeWire clock"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true

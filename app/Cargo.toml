@@ -1,0 +1,19 @@
+[package]
+name = "crownos-camera"
+description = "Camera for CrownOS: photos and video with hardware-accelerated AI effects"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+crownos-camera-capture = { workspace = true }
+crownos-camera-frame = { workspace = true }
+crownos-camera-record = { workspace = true }
+crownos-camera-still = { workspace = true }
+crownos-config = { workspace = true }
+anyhow = { workspace = true }
+chrono = { workspace = true }
+dirs = { workspace = true }
+
+[lints]
+workspace = true

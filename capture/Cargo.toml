@@ -1,0 +1,18 @@
+[package]
+name = "crownos-camera-capture"
+description = "Camera capture through PipeWire and decoding to RGBA"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+crownos-camera-frame = { workspace = true }
+crossbeam-channel = { workspace = true }
+ffmpeg-next = { workspace = true, features = ["software-scaling"] }
+pipewire = { workspace = true }
+rustix = { workspace = true, features = ["time"] }
+thiserror = { workspace = true }
+turbojpeg = { workspace = true }
+
+[lints]
+workspace = true
