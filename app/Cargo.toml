@@ -11,9 +11,13 @@ crownos-camera-frame = { workspace = true }
 crownos-camera-record = { workspace = true }
 crownos-camera-still = { workspace = true }
 crownos-config = { workspace = true }
+crownui = { workspace = true }
+crownui-audio = { workspace = true }
 anyhow = { workspace = true }
 chrono = { workspace = true }
+crossbeam-channel = { workspace = true }
 dirs = { workspace = true }
+tokio = { workspace = true }
 
 [lints]
 workspace = true
