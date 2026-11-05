@@ -578,7 +578,7 @@ dependencies = [
 
 [[package]]
 name = "crownos-camera"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "anyhow",
  "audio",
@@ -596,7 +596,7 @@ dependencies = [
 
 [[package]]
 name = "crownos-camera-capture"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "crossbeam-channel",
  "crownos-camera-frame",
@@ -609,11 +609,11 @@ dependencies = [
 
 [[package]]
 name = "crownos-camera-frame"
-version = "0.1.0"
+version = "0.2.0"
 
 [[package]]
 name = "crownos-camera-record"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "crownos-camera-frame",
  "crownos-config",
@@ -624,7 +624,7 @@ dependencies = [
 
 [[package]]
 name = "crownos-camera-still"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "crownos-camera-frame",
  "thiserror 2.0.21",
