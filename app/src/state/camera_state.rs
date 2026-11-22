@@ -36,6 +36,13 @@ pub struct CameraState {
 impl CameraState {
     /// Builds the state and opens the configured camera, or the default one.
     pub fn new(cx: &mut Cx, settings: Settings) -> Self {
+        let state = Self::without_camera(cx, settings);
+        state.open_camera(cx);
+        state
+    }
+
+    /// Builds the state with no camera session, the viewfinder still starting.
+    pub fn without_camera(cx: &mut Cx, settings: Settings) -> Self {
         let mode = mode_index(settings.initial_mode());
         let state = Self {
             settings: cx.store(settings),
@@ -57,7 +64,6 @@ impl CameraState {
             .session_mailbox
             .update(cx, |mailbox| *mailbox = Some(sessions));
         cx.on_close_requested(move |cx, event| state.close_requested(cx, event));
-        state.open_camera(cx);
         state
     }
 

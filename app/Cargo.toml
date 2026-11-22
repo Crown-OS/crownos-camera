@@ -19,5 +19,8 @@ crossbeam-channel = { workspace = true }
 dirs = { workspace = true }
 tokio = { workspace = true }
 
+[dev-dependencies]
+capture = { path = "../../crownui/capture" }
+
 [lints]
 workspace = true

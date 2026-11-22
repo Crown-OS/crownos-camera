@@ -3,7 +3,7 @@
 pub mod app;
 mod session;
 pub mod settings;
-mod state;
-mod ui;
+pub mod state;
+pub mod ui;
 pub mod util;
 mod viewfinder;

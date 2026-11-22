@@ -9,4 +9,6 @@ mod viewfinder;
 
 pub use camera_state::CameraState;
 pub use capture_mode::MODES;
+pub use last_capture::LastCapture;
+pub use recording_phase::RecordingPhase;
 pub use viewfinder::Viewfinder;
