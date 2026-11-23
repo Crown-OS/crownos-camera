@@ -22,7 +22,7 @@ thiserror = "2"
 chrono = { version = "0.4", default-features = false, features = ["clock"] }
 crossbeam-channel = "0.5"
 dirs = "6"
-ffmpeg-next = { version = "9.0.0", default-features = false }
+ffmpeg-next = { version = "9.1.0", default-features = false }
 pipewire = { version = "0.10.1", features = ["v0_3_44"] }
 rustix = { version = "1", default-features = false, features = ["std"] }
 tokio = { version = "1", default-features = false, features = ["sync", "time"] }
